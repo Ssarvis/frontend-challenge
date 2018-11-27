@@ -1,0 +1,77 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  }
+
+.backarrow {
+  float: left;
+  padding-left: 16px;
+  padding-top: 2px;
+}
+
+.header {
+  height: 63px;
+  width: 100%;
+  background-color: #009688;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.map {
+  height: 265px;
+  width: 100%;
+  background-image: url(../BusyBus.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: 45px 65px 65px 65px 65px 65px 65px 65px 65px 65px;
+}
+
+.grid-item {
+  font-size: 1em;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #757575;
+  line-height: 20px;
+  display: flex;
+  align-items:center;
+}
+
+.listhead {
+  background-color: #009688;
+  color: #ffffff;
+  font-size: 1em;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.rightchevron {
+  float: right;
+  padding-top: 24px;
+  border-bottom: 1px solid #757575;
+}
+
+.line {
+  color: #2196F3;
+  font-weight: bold;
+}
+
+.resumes {
+  color: orange;
+  font-weight: bold;
+}
+
+.outofservice {
+  color: red;
+  font-weight: bold;
+}
