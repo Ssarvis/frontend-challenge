@@ -2,68 +2,87 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BusyBus App</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   </head>
   <body>
-    <div class ="header">
-      <div class="backarrow"><img src="Shape.png"></div>
-      Washington & State
-    </div>
-    <div class="map">
-    </div>
-    <div class="grid-container">
-      <div class="listhead"> Line </div>
-      <div class="listhead"> Destination </div>
-      <div class="listhead"> Frequency </div>
-      <div class="listhead"> Traveling </div>
-      <div class="listhead"></div>
-      <div class="grid-item line"> 60 </div>
-      <div class="grid-item"> Randolph/Harbor Dr. </div>
-      <div class="grid-item"> Every 20 min </div>
-      <div class="grid-item"> Eastbound  </div>
-      <div class="rightchevron"><img src="Shape1.png"></div>
-      <div class="grid-item line"> 124 </div>
-      <div class="grid-item"> Navy Pier </div>
-      <div class="grid-item"> Every 10 min </div>
-      <div class="grid-item"> Eastbound </div>
-      <div class="rightchevron"><img src="Shape1.png"></div>
-      <div class="grid-item line"> 151 </div>
-      <div class="grid-item"> Devon/Clark </div>
-      <div class="grid-item"> Every 16 min </div>
-      <div class="grid-item"> Northbound </div>
-      <div class="rightchevron"><img src="Shape1.png"></div>
-      <div class="grid-item line"> J14 </div>
-      <div class="grid-item"> 103rd Stony Island </div>
-      <div class="grid-item"> Every 15 min </div>
-      <div class="grid-item"> Southbound </div>
-      <div class="rightchevron"><img src="Shape1.png"></div>
-      <div class="grid-item line"> 124 </div>
-      <div class="grid-item"> Navy Pier </div>
-      <div class="grid-item"> Every 10 min </div>
-      <div class="grid-item"> Southbound </div>
-      <div class="rightchevron"><img src="Shape1.png"></div>
-      <div class="grid-item line"> 6x </div>
-      <div class="grid-item"> Jackson Park Express </div>
-      <div class="grid-item resumes"> N/A </div>
-      <div class="grid-item outofservice"> Reroute </div>
-      <div class="rightchevron"><img src="Shape1.png"></div>
-      <div class="grid-item line"> 4 </div>
-      <div class="grid-item"> Cottage Grove </div>
-      <div class="grid-item resumes"> Resumes 12:10am </div>
-      <div class="grid-item outofservice"> Out of Service </div>
-      <div class="rightchevron"><img src="Shape1.png"></div>
-      <div class="grid-item line"> 20 </div>
-      <div class="grid-item"> Madison </div>
-      <div class="grid-item resumes"> Resumes 12:10am </div>
-      <div class="grid-item outofservice"> Out of Service</div>
-      <div class="rightchevron"><img src="Shape1.png"></div>
-      <div class="grid-item line"> 157 </div>
-      <div class="grid-item"> Streeterville/Taylor </div>
-      <div class="grid-item resumes"> Resumes 6:10am </div>
-      <div class="grid-item outofservice"> Out of Service </div>
-      <div class="rightchevron"><img src="Shape1.png"></div>
+    <div class="container">
+      <img src="images/statusbar.png" alt="status bar"/>
+      <div class ="header">
+        <nav>
+          <i class="fas fa-arrow-left"></i>
+          <h1>Washington & State</h1>
+        </nav>
+      </div>
+      <div class="map">
+      </div>
+      <div class="grid-container">
+        <div class="listhead"> Line </div>
+        <div class="listhead"> Destination </div>
+        <div class="listhead"> Arrival </div>
+        <div class="listhead"></div>
+        <!--Line 1-->
+        <div class="grid-item line"> 60 </div>
+        <div class="grid-item"> Randolph/Harbor Dr. <br>
+                              <span class="dest">Eastbound</span> </div>
+        <div class="grid-item"> 7:28am <br>
+                              <span class="dest">Every 20 min</span> </div>
+        <div class="rightchevron"><i class="fas fa-chevron-right"></i></div>
+        <!--Line 2-->
+        <div class="grid-item line"> 124 </div>
+        <div class="grid-item"> Navy Pier <br>
+                                <span class="dest"> Eastbound </span> </div>
+        <div class="grid-item"> 7:30am <br>
+                                <span class="dest"> Every 10 min </span> </div>
+        <div class="rightchevron"><i class="fas fa-chevron-right"></i></div>
+        <!--Line 3-->
+        <div class="grid-item line"> 151 </div>
+        <div class="grid-item"> Devon/Clark <br>
+                                <span class="dest"> Northbound </span> </div>
+        <div class="grid-item"> 7:42am <br>
+                                <span class="dest"> Every 16 min </span> </div>
+        <div class="rightchevron"><i class="fas fa-chevron-right"></i></div>
+        <!--Line 4-->
+        <div class="grid-item line"> J14 </div>
+        <div class="grid-item"> 103rd Stony Island <br>
+                                <span class="dest"> Southbound </span> </div>
+        <div class="grid-item"> 7:45am <br>
+                                <span class="dest"> Every 15 min </span> </div>
+        <div class="rightchevron"><i class="fas fa-chevron-right"></i></div>
+        <!--Line 5-->
+        <div class="grid-item line"> 124 </div>
+        <div class="grid-item"> Navy Pier <br>
+                                <span class="dest"> Southbound </dest> </div>
+        <div class="grid-item"> 7:55am <br>
+                                <span class="dest"> Every 10 min </span> </div>
+        <div class="rightchevron"><i class="fas fa-chevron-right"></i></div>
+        <!--Line 6-->
+        <div class="grid-item line red"> 6x </div>
+        <div class="grid-item"> Jackson Park Express <br> <span class="dest">Reroute </span></div>
+        <div class="grid-item na"> N/A </div>
+        <div class="rightchevron"><i class="fas fa-chevron-right"></i></div>
+        <!--Line 7-->
+        <div class="grid-item line gray"> 4 </div>
+        <div class="grid-item gray"> Cottage Grove <br> Out of Service </div>
+        <div class="grid-item gray"> Resumes 12:10am </div>
+        <div class="rightchevron gray"><i class="fas fa-chevron-right"></i></div>
+        <!--Line 8-->
+        <div class="grid-item line gray"> 20 </div>
+        <div class="grid-item gray"> Madison <br> Out of Service </div>
+        <div class="grid-item gray"> Resumes 12:10am </div>
+        <div class="rightchevron gray"><i class="fas fa-chevron-right"></i></div>
+        <!--Line 9-->
+        <div class="grid-item line gray"> 157 </div>
+        <div class="grid-item gray"> Streeterville/Taylor <br> Out of Service </div>
+        <div class="grid-item gray"> Resumes 6:10am </div>
+        <div class="rightchevron gray"><i class="fas fa-chevron-right"></i></div>
+      </div>
+      <footer>
+        <img src="images/navbar.png" alt="nav bar"/>
+      </footer>
     </div>
   </body>
 </html>
